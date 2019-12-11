@@ -1,15 +1,10 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
+	Web developer: Weronika Sosnowska
+	Twitter: @maria_ux
+	From:Warsaw, Poland
 
-# TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+/* SITE */
+	Language: English / Polish
+	Doctype:HTML5
+	IDE: WebStorm, Visual Studio Code
