@@ -12,13 +12,13 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="img/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -33,14 +33,18 @@
         <li><a class="btn" href="#about">Contact</a></li>
       </ul>
     </div>
-    <div id="logo">
-    <img src="img/Presentation.png" class="icon"/>
-    </div>
 </header>
+<section class="logo">
+    <div id="logo_info">
+      <h2 class="logo_name">Weronika Sosnowska</h2>
+      <p class="logo_tittle">Junior Software Developer</p>
+    </div>
+    <img src="img/sosnowska weronika.jpg" class="logo_pic"/>
+  </section>
     <section id="about">
+    <a><h1 class="content_section_tittle">About me</h1></a>
     <div class="about">
-      <div class="tittle"><a><h1 class="abtittle">About me</h1></a> </div>
-      <div><p class="tekstomnie">
+      <p class="tekstomnie">
         Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
         Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
         Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
@@ -51,36 +55,42 @@
         Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
         Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
         
-      </p></div>
+      </p>
     </div>
     </section>
-    <section class="projects">
-      <br>
-      <div class="tittle"><a ><h1 class="abtittle">Projects</h1></a></div>
-      <br>
-      <div class="column">
-        <img src="img/Rectangle.png"/>
-        <h2>ToDo List</h2>
-      </div>
+    <section class="projects" id="projects">
+      <a ><h1 class="content_section_tittle">Projects</h1></a>
+      <div class="content">
+        <article class="project">
+          <img src="img/Rectangle.png"/>
+          <header class="project_info">
+            <p>ToDo List</p>
+          </header>
+        </article>
 
-      <div class="column">
-        <img src="img/Rectangle.png"/>
-        <h2>Seller</h2>
-      </div>
+        <article class="project">
+          <img src="img/Rectangle.png"/>
+          <header class="project_info">
+            <p>ToDo List</p>
+          </header>
+        </article>
 
-      <div class="column">
-        <img src="img/Rectangle.png"/>
-        <h2>Game</h2>
+        <article class="project">
+          <img src="img/Rectangle.png"/>
+          <header class="project_info">
+            <p>ToDo List</p>
+          </header>
+        </article>
       </div>
-    </section>
+   </section>
     <section id="school">
-      <div class="tittle"><h1 class="abtittle">School</h1></div>
+      <h1 class="content_section_tittle">School</h1>
       <div class="pjatk">
-        <img src="img/pjatk%20szerokie.jpg" align="left"/>
+        <img src="img/pjatk%20szerokie.jpg" />
+        <h2>Polish-Japanese Academy of Information Technology</h2>
       </div>
     </section>
 
-  </div>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -90,11 +100,6 @@
   <script src="jquery.min.js" charset="utf-8"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview');
-
-  </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
