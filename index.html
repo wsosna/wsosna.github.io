@@ -9,12 +9,11 @@
   <meta http-equiv="content-language" content="pl">
   <meta name="author" content="Weronika Sosnowska">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" href="css/main.css">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+
   <link rel="shortcut icon" href="img/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
@@ -23,73 +22,136 @@
 </head>
 
 <body>
-<header>
-    <div class="nav">
-      <ul>
-        <li><a class="btn" href="#about">About me</a></li>
-        <li><a class="btn" href="#projects">Projects</a></li>
-        <li><a class="btn" href="#school">School</a></li>
-        <li><a class="btn" href="#contact">Job experience</a></li>
-        <li><a class="btn" href="#about">Contact</a></li>
-      </ul>
-    </div>
+<header class="page-header">
+    <ul class="nav">
+      <li><a class="menu_btn" href="#about">About me</a></li>
+      <li><a class="menu_btn" href="#skills">Skills</a></li>
+      <li><a class="menu_btn" href="#school">School</a></li>
+      <li><a class="menu_btn" href="#job">Job experience</a></li>
+      <li><a class="menu_btn" href="#contact">Contact</a></li>
+    </ul>
+    <section class="logo">
+      <div id="logo_info">
+        <h2 class="logo_name">Weronika Sosnowska</h2>
+        <p class="logo_tittle">Junior Software Developer</p>
+      </div>
+      <img src="img/sosnowska weronika.jpg" class="logo_pic"/>
+    </section>
 </header>
-<section class="logo">
-    <div id="logo_info">
-      <h2 class="logo_name">Weronika Sosnowska</h2>
-      <p class="logo_tittle">Junior Software Developer</p>
-    </div>
-    <img src="img/sosnowska weronika.jpg" class="logo_pic"/>
-  </section>
+<main class="page-content"></main>
     <section id="about">
-    <a><h1 class="content_section_tittle">About me</h1></a>
-    <div class="about">
-      <p class="tekstomnie">
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        Witaj, nazywam się Weronika Sosnowska i jestem programistką z umiejętnościami na poziomie juniorskim. Programowanie to moja wielka pasja.
-        
-      </p>
+      <a><h1 class="content_section_tittle">About me</h1></a>
+      <div class="about">
+        <p class="tekstomnie">
+          Hi! 
+          </br>
+          My name is Weronika and I am a <b>Junior Software Developer</b> with 1 year experience. 
+          </br></br>
+          At my current job I develop HR ERP system solutions for small and medium companies.
+          Most of the tasks deal with changes in law and solutions making our program more 
+          comfvenient to use for our clients. My job is to figure out <b>algorythms</b> based on 
+          law articles and implement them in our system.
+          </br></br>
+          In the future I would like to specialise in Big Data and Machine learning technologies.
+
+        </p>
+      </div>
+    </section>
+  <section class="skills" id="skills">
+    <a ><h1 class="content_section_tittle">Main technical skills</h1></a>
+    <div class="content_skills">
+      <article class="skill">
+        <img src="img/icons8-java-50.png"/>
+        <header class="skill_info">
+          <p>Java</p>
+        </header>
+      </article>
+
+      <article class="skill">
+        <img src="img/icons8-javascript-50.png"/>
+        <header class="project_info">
+          <p>JavaScript</p>
+        </header>
+      </article>
+
+      <article class="skill">
+        <img src="img/icons8-database-export-50.png"/>
+        <header class="project_info">
+          <p>SQL and database administration</p>
+        </header>
+      </article>
     </div>
-    </section>
-    <section class="projects" id="projects">
-      <a ><h1 class="content_section_tittle">Projects</h1></a>
-      <div class="content">
-        <article class="project">
-          <img src="img/Rectangle.png"/>
-          <header class="project_info">
-            <p>ToDo List</p>
-          </header>
-        </article>
-
-        <article class="project">
-          <img src="img/Rectangle.png"/>
-          <header class="project_info">
-            <p>ToDo List</p>
-          </header>
-        </article>
-
-        <article class="project">
-          <img src="img/Rectangle.png"/>
-          <header class="project_info">
-            <p>ToDo List</p>
-          </header>
-        </article>
+  </section>
+  <section id="school">
+    <h1 class="content_section_tittle">School and certificates</h1>
+    <div class="content_school">
+      <div class="content_school_item">
+        <img class="school_img" src="img/pjatk.png" />
+        <div class="content_school_exp">
+          <h2 class="content_school_tittle">Polish-Japanese Academy of Information Technology</h2>
+          <p class="content_school_info">Informatic studies, 2017 - 2021</p>
+        </div>
       </div>
-   </section>
-    <section id="school">
-      <h1 class="content_section_tittle">School</h1>
-      <div class="pjatk">
-        <img src="img/pjatk%20szerokie.jpg" />
-        <h2>Polish-Japanese Academy of Information Technology</h2>
+      <div class="content_school_item">
+        <img class="school_img" src="img/daftcode.jpg" />
+        <div class="content_school_exp">  
+          <h2 class="content_school_tittle">DaftCodeAcademy</h2>
+          <p class="content_school_info">FrontEnd4Beginners course</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
+  <section id="job">
+    <h1 class="content_section_tittle">Job experience</h1>
+    <div class="content_school">
+      <div class="content_school_item">
+        <img class="job_img" src="img/assecobs.png" />
+        <div class="content_school_exp">
+          <h2 class="content_school_tittle">Asseco Business Solutions</h2>
+          <p class="content_school_info">Junoior Software Developer</p>
+        </div>
+      </div>
+      <div class="content_school_item">
+        <img class="job_img" src="img/CGU.PNG" />
+        <div class="content_school_exp">  
+          <h2 class="content_school_tittle">Consulting Grzegorz Utrata</h2>
+          <p class="content_school_info">Junior implementation specialist/developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <h1 class="content_section_tittle">Contact</h1>
+    <div class="content_contact">
+      <div class="content_contact_item">
+        <a " href="https://www.linkedin.com/in/weronika-sosnowska-60b421150/" target="_blank">
+          <img src="img/icons8-linkedin-50.png" />
+        </a>
+      </div>
+      <div class="content_contact_item">
+        <a  href="https://github.com/wsosna" target="_blank">
+          <img src="img/icons8-github-50.png" />
+        </a>
+      </div>
+      <div class="content_contact_item">
+        <a  href="#contact">
+          <img src="img/icons8-important-mail-50.png" />
+      </a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <a target="_blank" href="https://icons8.com/icons/set/javascript">JavaScript</a>, 
+  <a target="_blank" href="https://icons8.com/icons/set/java-coffee-cup-logo">Java</a> 
+  and other icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+  </br>
+  Website created by Weronika Sosnowska
+
+</footer>
+
+
+
 
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>

@@ -1,181 +1,221 @@
-
 body{
-  text-align:center;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-}
 
-.nav {
-  padding: 15px;
-}
-section {
-  display: inline-block;
-}
-.logo {
-  display: inline-flex;
-  flex-direction: row;
-  margin-top: 10%;
-  width: 80%;
-  justify-content: center;
-}
-.logo_pic {
-  width: 30%;
-}
-.logo_info {
-  
-}
-.logo_name {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+  }
 
-  font-size: 50px;
-  font-weight: bold;
-}
-.logo_tittle {
-}
-
-.btn{
-  display: block;
-  color: #000000;
-  line-height: 21px;
-  text-align: center;
-  text-decoration: none;
-  padding:20px 40px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  -o-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-.btn:hover{
-  border:none;
-  background: #000000;
-  padding:20px 60px;
-  color: #b4b4b4;
-  -o-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-.nav {
-  list-style:none;
-  text-align:center;
-}
-.nav ul {
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-
-.nav li{display:inline;}
-.nav a{text-decoration:none; display:inline-block; margin:0 1px;}
-
-
-/* * {
-  -webkit-transition-property: all;
-  -webkit-transition-duration: .2s;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
-  -moz-transition-property: all;
-  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
-}
+/*
+#################################
+MAIN LAYOUT
+#################################
 */
+
+.page-header {
+    text-align: center;
+    top: 50px;
+    left: 50px;
+}
+
+.page-footer {
+    bottom: 50px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.page-content {
+    margin-left: 220px;
+    padding: 0 10%;
+}
 
 .content_section_tittle {
-  float: left;
-  font-size: 36px;
-  line-height: 42px;
-  padding: 30px;
-  margin-top: 10%;
-  margin-left: 50px;
-  margin-right: 50px;
+    padding-left: 20px;
+    font-size: 32px;
 }
 
-.tekstomnie {
-  padding:75px;
-  width: 50%;
-  float: right;
-  text-align:center;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  margin-right: 15%;
-  margin-top: 10%;
-  color: #555555;
+section {
+    padding-top: 20px;
 }
-
-/*img{
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-}
-
-img:hover {
-  -o-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -webkit-transition: all 0.6s;
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
+/*
+#################################
+MENU
+#################################
 */
-.pjatk{
-  float: left;
-  width: 80%;
-  position: relative;
-}
-
-
-.projects {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  border-radius: 10px;
-  padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  box-sizing: border-box;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    box-sizing: border-box;
-    width: 100%;
+.nav {
+    padding: 15px;
+    font-weight: bold;
+    list-style:none;
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    grid-template-rows: repeat(1, 100px);
+    column-gap: 20px;
+    row-gap: 10px;
   }
-  .logo_pic {
-    visibility: hidden;
+
+  .nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
   }
-  .logo_info {
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+  .nav li{display:inline;}
+  .nav a{
+    text-decoration:none; 
+    display:inline-block; 
+    margin:0 1px;
   }
   
+  .menu_btn{
+    display: block;
+    color: #000000;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    padding:20px 40px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+  
+  .menu_btn:hover{
+    border:none;
+    background: #000000;
+    color: #b4b4b4;
+    -o-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+/*
+#################################
+LOGO
+#################################
+*/
+
+  .logo {
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 10%;
+    width: 80%;
+    justify-content: center;
+  }
+
+  .logo_pic {
+    width: 30%;
+  }
+  .logo_tittle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .logo_name {
+  
+    font-size: 50px;
+    font-weight: bold;
+  }
+  . {
+  }
+
+/*
+    #################################
+    ABOUT ME
+    #################################
+*/
+.about {
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+    font-size: 18px;
 }
 
-.fixed {
-  position: fixed;
-  top: -5px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 0 40px #222;
-  -webkit-box-shadow: 0 0 40px #222;
-  -moz-box-shadow: 0 0 40px #222;
+/*
+    #################################
+    MAIN TECHNICAL SKILLS
+    #################################
+*/
+.content_skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(1, 150px);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.skill {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
+
+/*
+    #################################
+    SCHOOL AND CERTIFICATES
+    #################################
+*/
+
+.school {
+
+}
+.content_school {
+    display: flex;
+    /*   flex-direction: row; */
+      flex-direction: column;
+      padding: 20px;
+      margin-left: 20%;
+      margin-right: 10%;
+}
+.content_school_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(1, 200px);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.school_img {
+    width: 150px;
+}
+
+.job_img {
+    width: 250px;
+}
+
+/*
+    #################################
+    CONTACT
+    #################################
+*/
+.content_contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: repeat(1, 150px);
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+
+
+}
+.content_contact_item {
+    padding: 10px;
+
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.content_contact_item:hover {
+
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+  /* MEDIA >980px !!!!!!!!! */
