@@ -34,3 +34,6 @@ sr.reveal('h1, h2, p, img', {
   reset: true,
   delay: 300
 });
+
+window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview');
