@@ -109,6 +109,7 @@ LOGO
     margin-bottom: 10%;
     width: 80%;
     justify-content: center;
+    white-space:nowrap;
   }
 
 
