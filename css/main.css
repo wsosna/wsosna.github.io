@@ -182,9 +182,46 @@ LOGO
     width: 150px;
 }
 
-.job_img {
-    width: 250px;
+/*
+    #################################
+    JOB EXPERIENCE
+    #################################
+*/
+.container_job_img {
+  position: relative;
 }
+.job_img {
+  width: 200px;
+  position: absolute;              
+  top: 50%;                     
+  transform: translate(0, -50%) 
+}   
+
+.content_job_exp {
+  position: relative;
+}
+.content_job_exp_text {
+  position: absolute;              
+  top: 50%;                     
+  transform: translate(0, -50%) 
+}
+.content_job {
+  display: flex;
+  /*   flex-direction: row; */
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.content_job_item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  grid-template-rows: repeat(1, 200px);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+
 
 /*
     #################################
@@ -266,4 +303,26 @@ LOGO
   .page-header__hamburger--active span:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
   }
+
+  /*
+#################################
+LOGO
+#################################
+*/
+.logo_pic {
+  visibility: hidden;
+}
+.logo {
+  width: 100%;
+}
+
+.logo_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
 }
