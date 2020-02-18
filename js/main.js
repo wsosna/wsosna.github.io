@@ -1,3 +1,9 @@
+const menu = document.querySelector('.hamburger'); 
+
+menu.addEventListener('click', () => { 
+    menu.classList.toggle('hamburger--active'); 
+});
+
 function scroll(e) {
   var href = $(this).attr('href');
   e.preventDefault();
@@ -37,3 +43,4 @@ sr.reveal('h1, h2, p, img', {
 
 window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview');
+

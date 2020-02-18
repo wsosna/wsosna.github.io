@@ -3,6 +3,9 @@ body{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
   }
+  .page-header__hamburger {
+    display: none;
+  }
 
 /*
 #################################
@@ -219,3 +222,50 @@ LOGO
 }
 
   /* MEDIA >980px !!!!!!!!! */
+
+  @media screen and (max-width: 1000px) {
+
+
+    .page-header__hamburger {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgb(0, 0, 0);
+  }
+  .page-header__hamburger:focus {
+      outline-color: rgb(0, 0, 0);
+  }
+
+  .page-header__hamburger span {
+      width: 25px;
+      height: 4px;
+      margin: 2px 0;
+      display: block;
+      background-color: rgb(0, 0, 0);
+      border-radius: 2px;
+      transition: transform .2s, opacity .2s .4s;
+  }
+
+  .page-header__hamburger--active span {
+      transition: transform .2s .4s, opacity .4s;
+  }
+
+  .page-header__hamburger--active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .page-header__hamburger--active span:nth-child(2) {
+      opacity: 0;
+  }
+
+  .page-header__hamburger--active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
