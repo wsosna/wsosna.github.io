@@ -105,14 +105,13 @@ LOGO
   .logo {
     display: inline-flex;
     flex-direction: row;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     width: 80%;
     justify-content: center;
   }
 
-  .logo_pic {
-    width: 30%;
-  }
+
   .logo_tittle {
     font-size: 18px;
     font-weight: bold;
@@ -121,6 +120,20 @@ LOGO
   
     font-size: 50px;
     font-weight: bold;
+  }
+
+  .content_logo {
+    display: flex;
+    /*   flex-direction: row; */
+      flex-direction: column;
+      padding: 20px;
+  }
+  .content_logo_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(1, 320px);
+    column-gap: 20px;
+    row-gap: 10px;
   }
 
 /*
