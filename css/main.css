@@ -71,6 +71,7 @@ MENU
     display: block;
     color: #000000;
     line-height: 21px;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     padding:20px 40px;
@@ -162,6 +163,24 @@ LOGO
 
 .school {
 
+}
+.school_img_container {
+  position: relative;
+}
+.school_img {
+  width: 200px;
+  position: absolute;              
+  top: 50%;                     
+  transform: translate(0, -50%) 
+}   
+
+.school_exp_container {
+  position: relative;
+}
+.content_school_exp {
+  position: absolute;              
+  top: 50%;                     
+  transform: translate(0, -50%) 
 }
 .content_school {
     display: flex;
