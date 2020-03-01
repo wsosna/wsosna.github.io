@@ -24,23 +24,12 @@ $(function(){
   });
 });
 
-window.sr = ScrollReveal();
-sr.reveal('.icon', {
-  reset: true,
-  delay: 300,
-  distance: 0
+// Show/hide page navigation
+const menuButton = document.querySelector('#hamburger');
+
+menuButton.addEventListener('click', (e) => {
+    const pageNavigation = document.querySelector('.page-navigation');
+    pageNavigation.classList.toggle('page-navigation--visible');
+    const menuButton = document.querySelector('.page-header__hamburger');
+    menuButton.classList.toggle('page-header__hamburger--active');
 });
-sr.reveal('h1, h2, p, img', {
-  reset: true,
-  delay: 300
-});
-
-const menu = document.querySelector('.hamburger'); 
-
-menu.addEventListener('click', () => { 
-    menu.classList.toggle('hamburger--active'); 
-});
-
-window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview');
-
