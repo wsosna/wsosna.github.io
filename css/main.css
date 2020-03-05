@@ -414,6 +414,13 @@ LOGO
 /*#############
 CONTENT
 ################*/
+.content_cv_item {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);  
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 10px;
+}
 
 }
 @media screen and (max-width: 680px) {
