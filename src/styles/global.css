@@ -1,0 +1,51 @@
+@import './theme.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	color-scheme: dark;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-body);
+	font-size: 1.0625rem;
+	line-height: 1.7;
+}
+
+main {
+	max-width: 44rem;
+	margin: 0 auto;
+	padding: 6rem 1.5rem 4rem;
+}
+
+h1,
+h2 {
+	font-family: var(--font-mono);
+	color: var(--text-strong);
+	line-height: 1.2;
+}
+
+a {
+	color: var(--link);
+	text-underline-offset: 0.2em;
+}
+
+a:hover {
+	color: var(--function);
+}
+
+:focus-visible {
+	outline: 2px solid var(--function);
+	outline-offset: 3px;
+}
+
+::selection {
+	background: #214283;
+}

@@ -1,0 +1,21 @@
+/* IntelliJ "New UI Dark" inspired. Change colors here only. */
+:root {
+	--bg: #1e1f22;
+	--surface: #2b2d30;
+	--border: #393b40;
+	--text: #bcbec4;
+	--text-strong: #dfe1e5;
+	--comment: #7a7e85;
+
+	--keyword: #cc7832;
+	--string: #6a8759;
+	--number: #6897bb;
+	--function: #ffc66d;
+	--field: #9876aa;
+
+	--link: var(--number);
+	--accent: var(--keyword);
+
+	--font-body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	--font-mono: ui-monospace, 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
+}
